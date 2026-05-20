@@ -502,159 +502,6 @@
     font-weight: 600;
   }
 
-  /* ── COMPARISON STRIP ── */
-  .comparison {
-    background: var(--cream);
-    padding: 8rem var(--gutter);
-  }
-
-  .comparison-headline {
-    font-size: clamp(2.5rem, 4vw, 4.5rem);
-    color: var(--black);
-    margin-bottom: 4rem;
-  }
-
-  .comparison-grid {
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-    gap: 0;
-    border: 1px solid rgba(5,8,10,0.1);
-  }
-
-  .comparison-divider { background: var(--red); }
-
-  .comparison-col { padding: 3rem 3.5rem; }
-
-  .comparison-col-label {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 900;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 2rem;
-    display: block;
-  }
-
-  .comparison-col:first-child { background: var(--warm-white); }
-  .comparison-col:first-child .comparison-col-label { color: var(--mid-gray); }
-
-  .comparison-col:last-child { background: var(--black); }
-  .comparison-col:last-child .comparison-col-label { color: var(--red); }
-
-  .comparison-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .comparison-col:first-child .comparison-item { color: var(--mid-gray); }
-  .comparison-col:last-child .comparison-item { color: var(--light-gray); }
-
-  .comparison-item::before {
-    content: "";
-    width: 6px; height: 6px;
-    border-radius: 0;
-    flex-shrink: 0;
-    margin-top: 9px;
-  }
-
-  .comparison-col:first-child .comparison-item::before { background: var(--mid-gray); }
-  .comparison-col:last-child .comparison-item::before { background: var(--red); }
-
-  /* ── NEXT STEPS ── */
-  .next-steps {
-    background: var(--near-black);
-    padding: 8rem var(--gutter);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    position: relative;
-  }
-
-  .next-steps::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 50%; bottom: 0;
-    width: 3px;
-    background: rgba(237,29,38,0.2);
-  }
-
-  .next-steps-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .next-steps-headline {
-    font-size: clamp(3rem, 5vw, 5rem);
-    color: var(--warm-white);
-    margin-bottom: 1.5rem;
-  }
-
-  .next-steps-headline em {
-    font-style: normal;
-    color: var(--red);
-  }
-
-  .next-steps-body {
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.85;
-    color: var(--light-gray);
-  }
-
-  .next-steps-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  .next-step-item {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-
-  .next-step-item:last-child { border-bottom: none; padding-bottom: 0; }
-
-  .next-step-num {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: rgba(237,29,38,0.25);
-    line-height: 1;
-    flex-shrink: 0;
-    width: 40px;
-  }
-
-  .next-step-text {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .next-step-title {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    font-size: 1.15rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--warm-white);
-  }
-
-  .next-step-desc {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.7;
-    color: var(--light-gray);
-  }
-
   /* ── FOOTER ── */
   footer {
     background: var(--black);
@@ -726,7 +573,7 @@
       <em>Idea.</em>
     </h1>
     <p class="cover-sub fade-up">
-      A messaging architecture built from Caroline's brand story, her client's pain, and the one controlling idea she chose. Four options explored. One selected. Here's the full picture.
+      The messaging architecture for Rec House. One controlling idea. Five sound bites. Built from Caroline's brand story, her client's pain, and the conviction that real voices deserve to be heard.
     </p>
     <div class="cover-meta fade-up">
       <span class="cover-meta-label">Prepared for</span>
@@ -747,11 +594,8 @@
   <span class="nav-logo">Rec House</span>
   <ul class="nav-pills">
     <li><a href="#framework">The Framework</a></li>
-    <li><a href="#pitch-1">01 — Obscurity to Influential ✓</a></li>
-    <li><a href="#pitch-2">02 — Impact</a></li>
-    <li><a href="#pitch-3">03 — Noticed</a></li>
-    <li><a href="#pitch-4">04 — Heard</a></li>
-    <li><a href="#next">Next Steps</a></li>
+    <li><a href="#pitch-1">The Controlling Idea</a></li>
+    <li><a href="#five-second-test">The 5 Second Test</a></li>
   </ul>
 </nav>
 
@@ -772,8 +616,6 @@
         Every version of this pitch is built on the same architecture — a single controlling idea that answers three questions in five seconds: <strong>What do you offer? How will you make my life better? What do I need to do to buy it?</strong>
         <br><br>
         Each controlling idea is then expressed in five sound bites that move the visitor from pain to purchase — without making them work for it. High curiosity. Zero cognitive lift. One thread pulled all the way through.
-        <br><br>
-        These are not three equal options. They are three angles on the same truth. Your gut will tell you which one is yours.
       </p>
     </div>
   </div>
@@ -828,7 +670,7 @@
         <em>influential.</em>
       </h2>
       <p class="pitch-rationale">
-        This is the controlling idea Caroline chose — and it's the right one. <strong>"Obscurity" does something "invisible" doesn't.</strong> Invisible implies you're hiding. Obscurity means the world hasn't looked in the right direction yet. It's a more dignified framing for the client — and it lands harder as a transformation arc. The gap between those two words is exactly what Rec House sells. It works for the activist, the entrepreneur, the comedian with wild childhood stories. It doesn't prescribe the content. It describes the gap. And that gap is universal to every voice Rec House was built to serve.
+        One controlling idea. One enemy — the credibility tax. Named once, then set aside so the client's pain, desire, and identity can do their work. Caroline's language carries this. The framework gives it a spine.
       </p>
     </div>
   </div>
@@ -841,9 +683,9 @@
         <div class="soundbite-rule"></div>
       </div>
       <div class="soundbite-content">
-        <h3 class="soundbite-headline">Your podcast is a responsibility to your people.</h3>
+        <h3 class="soundbite-headline">If your audience can't find you, nobody's watching.</h3>
         <p class="soundbite-body">
-          You're not podcasting for vanity metrics. You're podcasting to tell stories, connect with an audience, leverage your business. You have something to say and you need to say it with compelling visuals and clear messaging. Your podcast is a responsibility to your people. And the people who need to hear it most aren't finding it — because the production quality that signals credibility, that tells the algorithm and the listener, <em>"this podcast is worth their time,"</em> <strong>isn't in place yet.</strong>
+          You're not podcasting for vanity metrics. You're podcasting to tell stories, connect with an audience, leverage your business. You have something to say and you need to say it with compelling visuals and clear messaging. But the people who need to hear it most aren't finding it — because the production quality that signals credibility, that tells the algorithm and the listener <em>this podcast is worth their time</em>, isn't in place yet. That gap has a name. <strong>It's the credibility tax.</strong> And Rec House exists to eliminate it.
         </p>
       </div>
     </div>
@@ -855,9 +697,9 @@
         <div class="soundbite-rule"></div>
       </div>
       <div class="soundbite-content">
-        <h3 class="soundbite-headline">I've watched good people lose ground to voices with less to say.</h3>
+        <h3 class="soundbite-headline">I've watched real voices lose to loud voices with vanity credibility.</h3>
         <p class="soundbite-body">
-          I've watched good people, brilliant people lose ground to voices with less to say and more money to sound compelling. It disproportionately affects people of color, people with movements to build, stories to tell, businesses to grow. People who want production that signals authority before they've said a word. <strong>That signal is not out of your reach.</strong> It's something most production teams are not willing to build for you at a human scale. Rec House exists to correct it.
+          More money to sound compelling. It disproportionately affects people of color, people with movements to build, stories to tell, businesses to grow. People who want production that signals authority before they've said a word. <strong>That signal is not out of your reach.</strong> It's something most production teams are not willing to build for you at a human scale. Rec House exists to correct it.
         </p>
       </div>
     </div>
@@ -871,7 +713,7 @@
       <div class="soundbite-content">
         <h3 class="soundbite-headline">Rec House closes the gap between obscurity and influential.</h3>
         <p class="soundbite-body">
-          We give you the production infrastructure that broadcast networks give their talent — <strong>full video and audio, YouTube strategy, effortless process, omni-channel distribution, built around your schedule and your mission.</strong> The kind of production that signals authority before you've said a word. That makes the algorithm notice. That makes the listeners stay. That makes the sponsor reach out. You show up with your voice. <em>We make sure the world can't ignore it.</em>
+          With over a decade of experience, we give you the production infrastructure that broadcast networks give their talent — and the visual storytelling that turns viewers into an audience. <strong>Full video and audio, YouTube strategy, effortless process, omni-channel distribution — built around your schedule and your mission.</strong> The kind of production that signals authority before you've said a word. That makes the algorithm notice. That makes the listeners into fans. That makes the sponsor reach out. You show up with your voice. <em>We make sure the world can't ignore it.</em>
         </p>
       </div>
     </div>
@@ -885,7 +727,7 @@
       <div class="soundbite-content">
         <h3 class="soundbite-headline">You were never invisible. You were undiscovered.</h3>
         <p class="soundbite-body">
-          Those aren't the same thing — and only one of them is permanent. Invisible means you don't exist. Undiscovered means the world hasn't found you yet. <em>Rec House clients don't stay undiscovered.</em> The comedian with the childhood stories that make people cry-laugh. The activist whose message is decades overdue. The entrepreneur who figured something out the industry doesn't want you to know. <strong>Rec House clients don't show up hoping the algorithm is kind today.</strong> They step into production that matches their message — and the algorithm, the partnerships, the audience responds. They show up knowing their production matches their conviction — and that changes everything about how they carry themselves in front of the mic.
+          Those aren't the same thing — and only one of them is permanent. The comedian with the childhood stories that make people cry-laugh. The activist whose message is decades overdue. The entrepreneur whose business grows when customers become obsessed. They step into production without the credibility tax. <em>Visual storytelling that matches their message.</em> They show up on camera and with their guests effortlessly. <strong>Go ahead, grab the mic. We are Rec House.</strong>
         </p>
       </div>
     </div>
@@ -897,414 +739,88 @@
         <div class="soundbite-rule"></div>
       </div>
       <div class="soundbite-content">
-        <h3 class="soundbite-headline">You became impossible to ignore. That's influence.</h3>
+        <h3 class="soundbite-headline">You become impossible to ignore.</h3>
         <p class="soundbite-body">
-          Your podcast becomes the one people send to their friends. The one that shows up in recommendations. The one that attracts partnerships and sponsors who align with your mission. The one that builds the community that's already out there waiting for you. <strong>Not luck. Not going viral.</strong> <em>You became impossible to ignore.</em> That's influence. That is what Rec House was built to create.
+          Your podcast becomes the one people send to their friends. The one that attracts partnerships and sponsors who align with your mission. The people who needed to hear you — find you. The community that was always yours — forms. The people your message was built for — finally get it. <strong>Not luck. Not going viral.</strong> <em>You became impossible to ignore.</em> That's influence. That is what Rec House was built to create.
         </p>
       </div>
     </div>
   </div>
 
-  <div class="hero-line-block fade-up">
-    <div>
-      <span class="hero-line-label">Above the fold — 5-second test</span>
-      <div class="hero-line-text display">
-        From obscurity<br>
-        to influential.<br>
-        That's what we<br>
-        build at Rec House.
-      </div>
+  <!-- ABOVE THE FOLD OPTIONS -->
+  <div id="five-second-test" style="background:var(--near-black); padding: 5rem var(--gutter); border-top: 3px solid rgba(237,29,38,0.2);">
+    <div style="margin-bottom: 4rem;">
+      <span class="label" style="color:var(--light-gray); display:block; margin-bottom:1.5rem;">Above the Fold — 5-Second Test</span>
+      <p style="font-size:1.125rem; font-weight:400; line-height:1.8; color:var(--light-gray); max-width:600px;">Three options. Each answers: who it's for, what the pain is, what the desire is, and what to do next. One CTA throughout: Book a Discovery Call.</p>
     </div>
-    <p class="hero-line-note">
-      "Obscurity" does the heavy lifting here. It's not accusatory — it's honest. The visitor reads this before they've scrolled an inch and immediately knows <strong>what Rec House offers</strong> (the path from obscurity to influence), <strong>how it will make their life better</strong> (they stop being overlooked and start being sought after), and they're primed for the third question — <em>what do I need to do to get there?</em> High curiosity. Zero cognitive lift. One thread pulled all the way through.
-    </p>
-  </div>
-</section>
 
-<!-- ═══════════════════════════════════════════
-     PITCH 02 — IMPACT
-═══════════════════════════════════════════ -->
-<section class="pitch-section" id="pitch-2">
-  <div class="pitch-header fade-up">
-    <div class="pitch-number">02</div>
-    <div class="pitch-header-right">
-      <span class="pitch-tag">Controlling Idea Two</span>
-      <h2 class="pitch-controlling-idea display">
-        You have a message<br>that could change things.<br>
-        <em>Nobody's hearing it yet.</em>
-      </h2>
-      <p class="pitch-rationale">
-        This controlling idea lives on the axis of <strong>impact vs. invisibility.</strong> It speaks directly to the founder who knows her message matters — but keeps watching it disappear into the void. The pain isn't production quality. It's the gap between what she believes and what the world receives. Caroline's origin story — watching brilliant minority voices get dismissed because of lower production quality — lives entirely inside this axis.
-      </p>
-    </div>
-  </div>
-
-  <div class="soundbite-grid">
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Problem</span>
-        <span class="soundbite-sublabel">The Pain</span>
-        <div class="soundbite-rule"></div>
+    <!-- Option A -->
+    <div style="border: 1px solid rgba(237,29,38,0.2); margin-bottom: 3px; background:var(--black);">
+      <div style="background:var(--red); padding: 0.75rem 2.5rem; display:flex; align-items:center; justify-content:space-between;">
+        <span class="label" style="color:var(--near-black);">Option A</span>
+        <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.875rem; letter-spacing:0.1em; color:var(--near-black); text-transform:uppercase;">Lead with controlling idea</span>
       </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">You're showing up. The world isn't responding.</h3>
-        <p class="soundbite-body">
-          You're consistent. You're convicted. You're pouring real truth into that microphone. And the numbers don't reflect what you know your message is worth. Your download count doesn't match your potential. Your reach doesn't match your fire. And somewhere in the back of your mind, a voice is asking if it's worth it to keep going.
-        </p>
+      <div style="padding: 3rem 2.5rem; display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+        <div>
+          <div class="hero-line-text display" style="font-size:clamp(2.5rem,4vw,4rem); color:var(--warm-white); margin-bottom:1.5rem;">
+            From obscurity<br>to influential.
+          </div>
+          <p style="font-size:1.125rem; font-weight:400; line-height:1.8; color:var(--light-gray); margin-bottom:2rem;">For podcasters with something real to say — and an audience that hasn't found them yet. Your voice is ready. Your production needs to match it.</p>
+          <a href="#" style="display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--warm-white); border:2px solid var(--red); padding:14px 36px; text-decoration:none;">Book a Discovery Call</a>
+        </div>
+        <div style="border-left:3px solid rgba(237,29,38,0.2); padding-left:2.5rem;">
+          <span class="label" style="color:var(--red); display:block; margin-bottom:1rem;">What it's doing</span>
+          <p style="font-size:1rem; font-weight:400; line-height:1.8; color:var(--light-gray);">Opens with the transformation arc. Names the client in the subhead — podcasters with something real to say. Pain is implicit — audience hasn't found them. Desire is explicit — production that matches the voice.</p>
+        </div>
       </div>
     </div>
 
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Empathy</span>
-        <span class="soundbite-sublabel">The Mirror</span>
-        <div class="soundbite-rule"></div>
+    <!-- Option B -->
+    <div style="border: 1px solid rgba(237,29,38,0.2); margin-bottom: 3px; background:var(--black);">
+      <div style="background:var(--red); padding: 0.75rem 2.5rem; display:flex; align-items:center; justify-content:space-between;">
+        <span class="label" style="color:var(--near-black);">Option B</span>
+        <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.875rem; letter-spacing:0.1em; color:var(--near-black); text-transform:uppercase;">Lead with the pain hook</span>
       </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">I've watched brilliance get dismissed.</h3>
-        <p class="soundbite-body">
-          I spent years in professional production rooms and I saw it happen over and over. Voices that had more to say, more truth, more fire — getting dismissed by the market because their production didn't signal that they belonged in the conversation. <strong>That's not a talent gap. That's a production gap.</strong> And it is not fair. And I made it my mission to fix it.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Answer</span>
-        <span class="soundbite-sublabel">The Fix</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">Rec House makes your message impossible to dismiss.</h3>
-        <p class="soundbite-body">
-          We give you the production infrastructure that broadcast networks give their talent — <strong>effortlessly, affordably, built around your schedule and your mission.</strong> Professional video and audio. YouTube strategy. The full system. You show up with your truth. We make sure the world can't scroll past it.
-        </p>
+      <div style="padding: 3rem 2.5rem; display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+        <div>
+          <div class="hero-line-text display" style="font-size:clamp(2.5rem,4vw,4rem); color:var(--warm-white); margin-bottom:1.5rem;">
+            If your audience<br>can't find you,<br>nobody's watching.
+          </div>
+          <p style="font-size:1.125rem; font-weight:400; line-height:1.8; color:var(--light-gray); margin-bottom:2rem;">Rec House gives minority podcasters, activists, and entrepreneurs the production infrastructure that makes real voices impossible to ignore.</p>
+          <a href="#" style="display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--warm-white); border:2px solid var(--red); padding:14px 36px; text-decoration:none;">Book a Discovery Call</a>
+        </div>
+        <div style="border-left:3px solid rgba(237,29,38,0.2); padding-left:2.5rem;">
+          <span class="label" style="color:var(--red); display:block; margin-bottom:1rem;">What it's doing</span>
+          <p style="font-size:1rem; font-weight:400; line-height:1.8; color:var(--light-gray);">Opens with the pain hook — the strongest self-selection line we have. Subhead names who it's for specifically and what Rec House delivers. Desire is the outcome — real voices impossible to ignore.</p>
+        </div>
       </div>
     </div>
 
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Identity</span>
-        <span class="soundbite-sublabel">The Shift</span>
-        <div class="soundbite-rule"></div>
+    <!-- Option C -->
+    <div style="border: 1px solid rgba(237,29,38,0.2); background:var(--black);">
+      <div style="background:var(--red); padding: 0.75rem 2.5rem; display:flex; align-items:center; justify-content:space-between;">
+        <span class="label" style="color:var(--near-black);">Option C</span>
+        <span style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.875rem; letter-spacing:0.1em; color:var(--near-black); text-transform:uppercase;">Lead with identity and desire</span>
       </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">You're not a podcaster trying to be taken seriously.</h3>
-        <p class="soundbite-body">
-          You are a voice this world actually needs. You always were. <em>Now you sound like one.</em> The Rec House client doesn't show up hoping the algorithm is kind today. She shows up knowing her production matches her conviction — and that changes everything about how she carries herself in front of the mic.
-        </p>
+      <div style="padding: 3rem 2.5rem; display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+        <div>
+          <div class="hero-line-text display" style="font-size:clamp(2.5rem,4vw,4rem); color:var(--warm-white); margin-bottom:1.5rem;">
+            You were never<br>invisible.<br>You were<br>undiscovered.
+          </div>
+          <p style="font-size:1.125rem; font-weight:400; line-height:1.8; color:var(--light-gray); margin-bottom:2rem;">Rec House closes the gap between obscurity and influential — with over a decade of production experience built for the voices the industry has been sleeping on.</p>
+          <a href="#" style="display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--warm-white); border:2px solid var(--red); padding:14px 36px; text-decoration:none;">Book a Discovery Call</a>
+        </div>
+        <div style="border-left:3px solid rgba(237,29,38,0.2); padding-left:2.5rem;">
+          <span class="label" style="color:var(--red); display:block; margin-bottom:1rem;">What it's doing</span>
+          <p style="font-size:1rem; font-weight:400; line-height:1.8; color:var(--light-gray);">Opens with the identity reframe — removes shame before making a promise. Subhead names the transformation and Caroline's authority in the same sentence. Speaks directly to the client who already knows her voice matters but hasn't been able to prove it yet.</p>
+        </div>
       </div>
     </div>
 
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">End Result</span>
-        <span class="soundbite-sublabel">The Proof</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">Your message reaches the people it was always meant for.</h3>
-        <p class="soundbite-body">
-          Your show grows. Your authority compounds. Your movement begins. The partnerships you've been watching go to lesser podcasts start coming to you. And the community that was always meant to find you — <strong>finds you.</strong> <em>That's the impact Rec House exists to create.</em>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Hero compression line -->
-  <div class="hero-line-block fade-up">
-    <div>
-      <span class="hero-line-label">Above the fold — 5-second test</span>
-      <div class="hero-line-text display">
-        When people have trouble<br>making their podcast<br>matter — they call me.
-      </div>
-    </div>
-    <p class="hero-line-note">
-      This is the controlling idea compressed to a single above-the-fold line. A visitor reads this and immediately answers yes or no. <strong>Am I having trouble making my podcast matter?</strong> If yes — they're in. No explanation needed. No scrolling required to understand what Rec House does.
-    </p>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     PITCH 02 — NOTICED
-═══════════════════════════════════════════ -->
-<section class="pitch-section" id="pitch-3">
-  <div class="pitch-header fade-up">
-    <div class="pitch-number">03</div>
-    <div class="pitch-header-right">
-      <span class="pitch-tag">Controlling Idea Three</span>
-      <h2 class="pitch-controlling-idea display">
-        When people have trouble<br>getting their podcast<br>
-        <em>noticed —</em><br>they call me.
-      </h2>
-      <p class="pitch-rationale">
-        This controlling idea lives on the axis of <strong>visibility vs. invisibility.</strong> It's direct, personal, and carries an implied track record — people have called before, they will call again. "They call me" is not corporate. It's a person. A specific, confident, been-there person. It has the Caretaker-Magician energy baked in. The word "noticed" speaks to the discovery problem — the gap between quality content and the audience size it deserves.
-      </p>
-    </div>
-  </div>
 
-  <div class="soundbite-grid">
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Problem</span>
-        <span class="soundbite-sublabel">The Pain</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">You're creating. You're consistent. You're invisible.</h3>
-        <p class="soundbite-body">
-          You've been putting in the work. Publishing. Promoting. Showing up every week with something worth listening to. But the numbers tell a different story. You're not being discovered the way your content deserves to be discovered. And you're starting to wonder if maybe the problem is you — when the problem is never you. <strong>The problem is how you're being seen.</strong>
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Empathy</span>
-        <span class="soundbite-sublabel">The Mirror</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">The market rewards polish. Not truth.</h3>
-        <p class="soundbite-body">
-          Here's what I know after years in professional production: the podcasters who dominate the charts aren't always the best voices. They're the most polished ones. <strong>The most produced ones.</strong> The ones whose production signals authority before they've said a word. That signal is not out of your reach. It's just not something most production houses are willing to build for you at a human scale.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Answer</span>
-        <span class="soundbite-sublabel">The Fix</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">Rec House gives you the production that gets you noticed.</h3>
-        <p class="soundbite-body">
-          NBC-level production standards. Full video and audio. A YouTube strategy built for the algorithm that now controls who gets discovered. We handle every technical and creative element of your production — so the only thing between you and the audience you deserve is <strong>the decision to start.</strong>
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Identity</span>
-        <span class="soundbite-sublabel">The Shift</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">You're not underground. You're undiscovered.</h3>
-        <p class="soundbite-body">
-          There's a difference. Underground means hidden by choice. Undiscovered means the world hasn't found you yet — <em>but it will.</em> Rec House clients don't stay undiscovered. They step into production that matches their message and suddenly the algorithm, the partnerships, the audience — all of it starts to move.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">End Result</span>
-        <span class="soundbite-sublabel">The Proof</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">A show that gets found. An audience that grows. A chart position you earned.</h3>
-        <p class="soundbite-body">
-          Your podcast becomes the one people send to their friends. The one that shows up in recommendations. The one that attracts sponsors who align with your mission. <strong>You get noticed.</strong> Not because you went viral. Because you became impossible to ignore.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-line-block fade-up">
-    <div>
-      <span class="hero-line-label">Above the fold — 5-second test</span>
-      <div class="hero-line-text display">
-        When people have trouble<br>getting their podcast<br>noticed — they call me.
-      </div>
-    </div>
-    <p class="hero-line-note">
-      The most direct compression of the controlling idea. "They call me" carries authority, track record, and personality in three words. <strong>Noticed</strong> names the discovery problem immediately. A visitor reads this in two seconds and either self-selects in — or self-selects out. Both outcomes are correct.
-    </p>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     PITCH 03 — HEARD
-═══════════════════════════════════════════ -->
-<section class="pitch-section" id="pitch-4">
-  <div class="pitch-header fade-up">
-    <div class="pitch-number">04</div>
-    <div class="pitch-header-right">
-      <span class="pitch-tag">Controlling Idea Four</span>
-      <h2 class="pitch-controlling-idea display">
-        We make sure<br>
-        <em>the world</em><br>
-        hears you.
-      </h2>
-      <p class="pitch-rationale">
-        This controlling idea lives on the axis of <strong>voice vs. silence.</strong> It's the most mission-driven of the three — and the most directly connected to Caroline's origin story and Rec House's oppositional statement. "The world hears you" speaks to the movement leader, the activist, the minority creator whose message has weight beyond their download count. It also carries the rally cry — <em>the mic was always ours</em> — as its natural extension.
-      </p>
-    </div>
-  </div>
-
-  <div class="soundbite-grid">
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Problem</span>
-        <span class="soundbite-sublabel">The Pain</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">You have something urgent to say. The room isn't full yet.</h3>
-        <p class="soundbite-body">
-          You're not podcasting for content. You're podcasting because something needs to be said and you're the one who needs to say it. Your message isn't a hobby. It's a responsibility. But the people who need to hear it most aren't finding it — because the production quality that signals credibility, that tells the algorithm and the listener <strong>this person is worth your time</strong>, isn't there yet.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Empathy</span>
-        <span class="soundbite-sublabel">The Mirror</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">I built Rec House because your voice deserves better than this.</h3>
-        <p class="soundbite-body">
-          I watched good people — brilliant people — lose ground to voices with less to say and more money to sound polished. And it was disproportionately affecting people of color. People with movements to build. Communities to rally. <strong>That is not a content problem. That is a structural problem.</strong> Rec House exists to correct it.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Answer</span>
-        <span class="soundbite-sublabel">The Fix</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">Production that carries your message as far as it deserves to go.</h3>
-        <p class="soundbite-body">
-          Full-service video and audio podcast production. A YouTube strategy built for reach. A production system so effortless you stop spending energy on the technical and redirect it entirely back to your mission. <em>You show up. We make sure the world can hear you.</em> Not someday. Starting now.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">Identity</span>
-        <span class="soundbite-sublabel">The Shift</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">Join the movement to de-toxify podcasting.</h3>
-        <p class="soundbite-body">
-          Rec House clients aren't just building shows. They're building proof that the voices the industry overlooked were the ones worth listening to all along. <strong>The mic was always ours.</strong> <em>Now we sound like it.</em> Every client who publishes with Rec House is a vote against the system that tried to keep them out.
-        </p>
-      </div>
-    </div>
-
-    <div class="soundbite fade-up">
-      <div class="soundbite-label-col">
-        <span class="soundbite-type">End Result</span>
-        <span class="soundbite-sublabel">The Proof</span>
-        <div class="soundbite-rule"></div>
-      </div>
-      <div class="soundbite-content">
-        <h3 class="soundbite-headline">Your message reaches the people who needed to hear it.</h3>
-        <p class="soundbite-body">
-          Communities built. Movements launched. Audiences who found you and never left. Partnerships with people who share your values. A show that grows because it <em>should</em> grow — because what you're saying matters and now the world knows it. <strong>That is what Rec House is built to create.</strong>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-line-block fade-up">
-    <div>
-      <span class="hero-line-label">Above the fold — 5-second test</span>
-      <div class="hero-line-text display">
-        They're going to bet<br>against you.<br>We built Rec House<br>to prove them wrong.
-      </div>
-    </div>
-    <p class="hero-line-note">
-      Version three reconnects to the sword line we already locked. The controlling idea and the hero line are the same axis — voice vs. the industry that tried to silence it. <strong>This version has the most cultural weight</strong> and speaks most directly to Caroline's origin story and the clients she was built to serve.
-    </p>
-  </div>
-</section>
-
-<!-- COMPARISON -->
-<section class="comparison" id="comparison">
-  <div class="section-rule"></div>
-  <span class="label" style="color:var(--black); display:block; margin-bottom:1.5rem;">What Changes</span>
-  <h2 class="comparison-headline display" style="color:var(--black);">
-    Current messaging<br>vs. controlling idea<br><em style="font-style:normal; color:var(--dark-red);">architecture.</em>
-  </h2>
-
-  <div class="comparison-grid">
-    <div class="comparison-col">
-      <span class="comparison-col-label">Current homepage messaging</span>
-      <div class="comparison-item">Three competing threads — production quality, isolation, and industry gatekeeping — pulling in different directions.</div>
-      <div class="comparison-item">The visitor has to assemble the answer to "how will this make my life better" from multiple sections.</div>
-      <div class="comparison-item">The offer isn't specific enough — what am I buying, at what price, with what first step?</div>
-      <div class="comparison-item">Strong identity language buried in the mission section instead of living above the fold.</div>
-      <div class="comparison-item">The brand story is powerful but the visitor has to scroll to find it.</div>
-    </div>
-    <div class="comparison-divider"></div>
-    <div class="comparison-col">
-      <span class="comparison-col-label">With a controlling idea</span>
-      <div class="comparison-item">One axis. Every section of the site lives on it or gets cut. The visitor never has to work out what Rec House is for.</div>
-      <div class="comparison-item">"How will this make my life better" is answered in the first two seconds — in the hero line, before they've scrolled an inch.</div>
-      <div class="comparison-item">The offer, the first step, and the outcome are all stated clearly — discovery call, production system, your message reaches further.</div>
-      <div class="comparison-item">The identity shift — you're not a podcaster trying to be heard, you're a voice the world needs — becomes the above-the-fold promise.</div>
-      <div class="comparison-item">Caroline's origin story becomes the empathy sound bite — the moment the visitor thinks "she gets it."</div>
-    </div>
-  </div>
-</section>
-
-<!-- NEXT STEPS -->
-<section class="next-steps" id="next">
-  <div class="next-steps-left">
-    <div class="section-rule"></div>
-    <h2 class="next-steps-headline display fade-up">
-      Pick your<br>
-      <em>axis.</em><br>
-      We build<br>from there.
-    </h2>
-    <p class="next-steps-body fade-up">
-      These three controlling ideas are not competing strategies. They are three angles on the same truth — Caroline's origin story, Rec House's mission, and the client's pain. The one that lands in your gut is the right one. Once we lock it, everything else — homepage copy, offers page, about page, social content, the full five-page site — rebuilds around that single thread.
-    </p>
-  </div>
-  <div class="next-steps-right">
-    <div class="next-step-item fade-up">
-      <span class="next-step-num">01</span>
-      <div class="next-step-text">
-        <span class="next-step-title">Lock the controlling idea</span>
-        <span class="next-step-desc">Choose the axis — impact, noticed, or heard. Or tell us which words feel closest and we'll sharpen it together.</span>
-      </div>
-    </div>
-    <div class="next-step-item fade-up">
-      <span class="next-step-num">02</span>
-      <div class="next-step-text">
-        <span class="next-step-title">Rewrite the hero section</span>
-        <span class="next-step-desc">New headline, subhead, and above-the-fold layout built entirely around the chosen controlling idea and five sound bites.</span>
-      </div>
-    </div>
-    <div class="next-step-item fade-up">
-      <span class="next-step-num">03</span>
-      <div class="next-step-text">
-        <span class="next-step-title">Define the offer clearly</span>
-        <span class="next-step-desc">The third question — what do I do to buy it — needs a clear answer. Packages, pricing, or a discovery call path with a specific next action.</span>
-      </div>
-    </div>
-    <div class="next-step-item fade-up">
-      <span class="next-step-num">04</span>
-      <div class="next-step-text">
-        <span class="next-step-title">Build the five pages</span>
-        <span class="next-step-desc">Home, About, Offers, Social Proof, Blog — all built on the same controlling idea thread. One brand. One message. Everywhere.</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer>
